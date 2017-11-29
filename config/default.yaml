@@ -1,15 +1,15 @@
-url: 'http://localhost:8082'
+url: 'http://127.0.0.1:8080'
 
 mongodb:
-  server:   localhost
+  server:   127.0.0.1
   database: uptime
   user:     root 
-  password:
-  connectionString:       # alternative to setting server, database, user and password separately
+  password: dM298Aa3RDeWIYHI4
+  connectionString: mongodb://127.0.0.1:27017/uptime     # alternative to setting server, database, user and password separately
 
 monitor:
   name:                   origin
-  apiUrl:                 'http://localhost:8082/api' # must be accessible without a proxy
+  apiUrl:                 'http://127.0.0.1:8080/api' # must be accessible without a proxy
   pollingInterval:        10000      # ten seconds
   timeout:                5000       # five seconds
   userAgent:              NodeUptime/3.0 (https://github.com/fzaninotto/uptime)
